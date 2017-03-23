@@ -1,3 +1,9 @@
+---
+title: 《R语言统计学基础》勘误表
+published: true
+comments: true
+---
+
 本文用于全书的勘误。请各位大侠留下您的意见。本文可兼容LaTeX语法。
  
  
