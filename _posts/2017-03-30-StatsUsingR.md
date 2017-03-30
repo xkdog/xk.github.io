@@ -13,7 +13,7 @@ layout: post
 
 [本书](https://www.amazon.cn/%E6%95%B0%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%B3%BB%E5%88%97%E4%B8%9B%E4%B9%A6-R%E8%AF%AD%E8%A8%80%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%9F%BA%E7%A1%80-%E5%90%95%E5%B0%8F%E5%BA%B7/dp/B06XGR6LJZ/ref=sr_1_1?ie=UTF8&qid=1490843285&sr=8-1&keywords=%E5%90%95%E5%B0%8F%E5%BA%B7)是[我](http://zfxy.nankai.edu.cn/xk)在面向社会科学和行为科学类研究型大学的基础本科统计教材方面的一个新尝试。说它“新”，主要是因为从基本教学理念和统计工具方面与以往的教材相比，存在诸多的不同之处；说它是“尝试”，主要是因为很难说这种处理就是最完善的，而是一种试验性的探索过程。作为个人，出于所谓的敝帚自珍心态也罢，出于社会心理学里常讲的“基本归因谬误”误区也罢，当然坚信目前这种方式“代表”着未来的潮流，希望能够得到更多的呼应与支持，当然也欢迎真挚的批评与建议。
 
-由于本人的学识与细致有限，本书仍存在不少原本可以避免的失误。全书的勘误请见[这里](https://xkdog.github.io/2017-03-23-Errata/)，想要提交勘误意见烦请移步[这里](https://github.com/xkdog/StatsUsingR/blob/master/Errata.md)。这些都通过[GitHub](https://github.com/)平台发布。我诚恳地建议各统计学的新手与老鸟、旁观者与爱好者，都能充分地感受和学习R、Rstudio和GitHub等计算化、网络化工具带来的便利，尽管这些工具的学习过程可能充满各种猥琐心结。
+由于本人的学识与细致有限，本书仍存在不少原本可以避免的失误。全书的勘误请见[这里](https://xkdog.github.io/2017-03-23-Errata/)，想要提交勘误意见烦请移步[这里](https://github.com/xkdog/StatsUsingR/blob/master/Errata.md)。这些都通过[GitHub](https://github.com/)平台发布。我诚恳地建议各统计学的新手与老鸟、旁观者与爱好者，都能充分地感受和学习[R](https://www.r-project.org/)、[Rstudio](https://www.rstudio.com/)和[GitHub](https://github.com/)等计算化、网络化工具带来的便利，尽管这些工具的学习过程可能充满各种猥琐心结。
 
 本书所有的相关PDF资料与数据可从清华大学出版社免费下载，亦可通过以下[网盘链接](http://pan.baidu.com/s/1eS3OO1c)公开分享，有时你可能会看到存在不同的分享链接，可能是因为我建立了多个分享目录所致，内容应无实质区别。也可通过致信xkdog@126.com直接向我询问相关资料信息。本书的其他相关资料，将陆续存放于本人的[GitHub目录](https://github.com/xkdog/StatsUsingR)，敬请光临浏览。
 
