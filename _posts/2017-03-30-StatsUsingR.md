@@ -1,6 +1,6 @@
 ---
 title: 《R语言统计学基础》的两份说明
-published: true
+published: false
 comments: true
 layout: post
 ---
