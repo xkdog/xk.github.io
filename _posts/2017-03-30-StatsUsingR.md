@@ -29,11 +29,11 @@ layout: post
 
 再后来，由于系里的张阔副教授出国进修，需要有人代上心理统计课程。之前在院里开设`R`语言统计课程时，重点均在软件学习与使用，使用的都是他人的教材。接手心理统计课程时，觉得已有教材能跟`R`匹配的实在太少，教材内容上也存在诸多不理想之处。于是就想：何不造个让自己觉得称手的“讲义”出来？一来二去，讲义就变成了书稿，遂想干脆集结出版。心意既动，只能催着自己拼命赶路。中间也曾后悔多次，不该事先跟学生夸下海口“要写一本全面超越既有教材的教材”、导致自己骑虎难下。到后来只能不时动用意志力逼迫自己完成书稿。用心理学的语言说，这中间确有诸多的自我损耗（[ego depletion](https://en.wikipedia.org/wiki/Ego_depletion)），出现了各种强弩之末的姿态。原来的序言中有一句，后因篇幅原因删去了，这里抄录如下：
 
-    从意气风发地开篇到再三踌躇地结稿，此间诸多波折，竟令我等庸人之资，不时悟得[John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)的神人心迹：	
+“从意气风发地开篇到再三踌躇地结稿，此间诸多波折，竟令我等庸人之资，不时悟得[John von Neumann](https://en.wikipedia.org/wiki/John_von_Neumann)的神人心迹：	
 
-    > If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.
+> If people do not believe that mathematics is simple, it is only because they do not realize how complicated life is.
 
-    也不知该喜该悲。
+也不知该喜该悲。”
 
 凡此各种，遂有此书。当然，更多心路，还可参见“言不尽意”一节及正式“序言”一节。
 
