@@ -5,7 +5,9 @@ comments: true
 layout: post
 ---
 
-这里提供本人在清华大学出版社出版的《R语言统计学基础》的相关说明，分不正经版和正经版两种，读者可各取所好、随意阅读。目前本文尚在编辑完善过程中，请暂时忽略其中的各种古怪表达，待我慢慢重头收拾再行放开宣传。
+这里提供本人在清华大学出版社出版的《R语言统计学基础》的相关说明，分不正经版和正经版两种，读者可各取所好、随意阅读。目前本文尚在编辑完善过程中，随时可能发生删改与更新，请暂时忽略其中的各种古怪表达，待我慢慢重头收拾再行放开宣传。
+
+全书的勘误请见[这里](https://xkdog.github.io/2017-03-23-Errata/)，想要提交勘误意见烦请移步[这里](https://github.com/xkdog/StatsUsingR/blob/master/Errata.md)。在此先行谢过。
 
 ![cover](https://images-cn.ssl-images-amazon.com/images/I/61wcEf4ElmL.jpg)
 
