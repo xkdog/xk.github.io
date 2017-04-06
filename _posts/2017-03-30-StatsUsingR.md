@@ -17,7 +17,7 @@ layout: post
 
 ## 缘起
 
-[本书](https://www.amazon.cn/%E6%95%B0%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%B3%BB%E5%88%97%E4%B8%9B%E4%B9%A6-R%E8%AF%AD%E8%A8%80%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%9F%BA%E7%A1%80-%E5%90%95%E5%B0%8F%E5%BA%B7/dp/B06XGR6LJZ/ref=sr_1_1?ie=UTF8&qid=1490843285&sr=8-1&keywords=%E5%90%95%E5%B0%8F%E5%BA%B7)是[我](http://zfxy.nankai.edu.cn/xk)在编写基础本科统计教材方面的一个新尝试，主要面向研究型大学的社会科学和行为科学类学生编著。说它“新”，主要是因为从基本教学理念和统计工具方面与以往的教材相比，存在诸多的不同之处；说它是“尝试”，主要是因为很难说这种处理就是最完善的，而是一种试验性的探索过程。作为个人，出于所谓的敝帚自珍心态也罢，出于社会心理学里常讲的“基本归因谬误”误区也罢，当然坚信目前这种方式“代表”着未来的潮流，希望能够得到更多的呼应与支持，当然也欢迎真挚的批评与建议。这里将此中心路历程做一简单介绍，读者或可从中感悟一二。
+[本书](https://www.amazon.cn/%E6%95%B0%E9%87%8F%E7%BB%8F%E6%B5%8E%E5%AD%A6%E7%B3%BB%E5%88%97%E4%B8%9B%E4%B9%A6-R%E8%AF%AD%E8%A8%80%E7%BB%9F%E8%AE%A1%E5%AD%A6%E5%9F%BA%E7%A1%80-%E5%90%95%E5%B0%8F%E5%BA%B7/dp/B06XGR6LJZ/ref=sr_1_1?ie=UTF8&qid=1490843285&sr=8-1&keywords=%E5%90%95%E5%B0%8F%E5%BA%B7)是[我](http://zfxy.nankai.edu.cn/xk)在编写基础本科统计教材方面的一个新尝试，主要面向研究型大学的社会科学和行为科学类学生编著。说它“新”，主要是因为从基本教学理念和统计工具方面与以往的教材相比，存在诸多的不同之处；说它是“尝试”，主要是因为很难说这种处理就是最完善的，而是一种试验性的探索过程。作为个人，出于所谓的敝帚自珍心态也罢，出于社会心理学里常讲的[“基本归因谬误”](https://en.wikipedia.org/wiki/Fundamental_attribution_error)也罢，当然坚信目前这种方式“代表”着未来的潮流，希望能够得到更多的呼应与支持，也欢迎真挚的批评与建议。这里将此中心路历程做一简单介绍，读者或可从中感悟一二。
 
 
 约10来年前，由于阴差阳错的机会，我参与到美国大学先修课程（[Advanced Placement](http://apcentral.collegeboard.com/home)）、尤其是其中的[Calculus AB & BC和Statistics](http://apcentral.collegeboard.com/apc/public/courses/teachers_corner/index.html)两门课程在中国大陆的推广与培训过程。在历次[AP Annual Conference](https://apac.collegeboard.org/)的研讨会中，我频繁接触美国大学入门数学类、统计类课程的教学理念、课堂组织、教材体系和评分标准等问题，感觉深有启发。与此同时，在面向中国拟留美攻读本科学位的大陆高中生、以及我在南开大学周恩来政府管理学院的本职统计类教学科目的教学实践中，并结合自身在社会学、心理学领域的实证社会科学研究经验，我开始深度反思如何为中国的研究型大学的本科生撰写一本能够具有时代特征的统计教材。
@@ -38,7 +38,7 @@ layout: post
 
 ## 链接
 
-本书所有的相关PDF资料与数据可从[清华大学出版社](http://www.tup.tsinghua.edu.cn/index.html)免费下载，亦可通过以下[网盘链接](http://pan.baidu.com/s/1eS3OO1c)公开分享，有时你可能会看到存在不同的分享链接，可能是因为我建立了多个分享目录所致，内容应无实质区别。也可通过致信xkdog@126.com直接向我询问相关资料信息。本书的其他相关资料，将陆续存放于本人的[GitHub目录](https://github.com/xkdog/StatsUsingR)，敬请光临浏览。
+本书所有的相关PDF资料与数据可从[清华大学出版社](http://www.tup.tsinghua.edu.cn/index.html)免费下载，亦可通过以下[网盘链接](http://pan.baidu.com/s/1eS3OO1c)公开分享，有时你可能会看到存在不同的分享链接，可能是因为我建立了多个分享目录所致，内容应无实质区别；又或者可能发现部分链接失效，可能是我误删或其他不明原因所致。此时可致信xkdog@126.com直接向我询问相关资料信息。本书的其他相关资料，将陆续存放于本人的[GitHub目录](https://github.com/xkdog/StatsUsingR)，敬请光临浏览。
 
 
 ## 致歉 & 致谢
