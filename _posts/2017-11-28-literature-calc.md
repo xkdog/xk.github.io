@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Lec01:Introduction to Fundamental Statistics Using R
+title: "不到10行代码计算不同年份区间的文献占比"
 published: true
 comments: true
 ---
