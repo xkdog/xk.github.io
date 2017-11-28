@@ -1,0 +1,76 @@
+---
+layout: post
+title: Lec01:Introduction to Fundamental Statistics Using R
+published: true
+comments: true
+---
+
+# 如何用 R 计算不同年份区间的文献占比情况
+
+《心理科学进展》等期刊，在综述类文献的论文自检报告中，通常会要求计算近5年文献所占比例，以体现综述的时效性。一篇综述文章的文献一般较多，靠人工计数的方式计算近5年文献占比，不仅费时，且容易产生误差。如何用 R 完成这一工作呢？以下用不到8行的代码解决这一问题。
+
+以下假定所有文献均按[《心理科学进展》](http://journal.psych.ac.cn/xlkxjz/CN/1671-3710/home.shtml)规定的[“参考文献著录要求”](http://journal.psych.ac.cn/xlkxjz/fileup/ITEM/20140305163219.doc)、即 APA 格式撰写。为简便分析，假定文献只包含以下三种模式。
+
+1. 汪新建, 张慧娟, 武迪, 吕小康. (2017). 文化对个体风险感知的影响: 文化认知理论的解释. *心理科学进展, 25* (8): 1251–1260.
+1. Pohl, R. F. (Ed.). (2012). *Cognitive illusions: A handbook on fallacies and biases in thinking, judgement and memory*. New York: Psychology Press. 
+1. 吕小康. (2016-9-14). 建设人文主义导向的中国本土心理学. *光明日报(理论版)*, p14.
+
+应该说，绝大多数的引用文献都属于这三种模式之一。这里暂不涉及未发表文献的引用，以及网络资料的引用，以及其他复杂情况的引用，以简化模型。
+
+要提取其中的年份信息，关键在于识别其统一的模式。按 APA 格式的一般要求，作者后面一般就用小括号给出发表年份，因此通常的思路可能会考虑提取括号中的数字，但这里涉及如下问题：
+
+- 小括号不止一个，如上面的第2条文献所列。
+- 小括号中的数字不止包括年份，还包含月份或日期。
+
+尽管如此，通过分析 APA 参考文献著录格式，基本上可以确定以下要点：
+
+- 年份信息包含在一对英文小括号中。
+- 年份信息均为4位数编码，且紧跟在左括号`(`后，中间没有空格。
+- 作者姓名部分不会现出小括号 + 数字的模式。
+
+综上，不必理会年份之前是否包括其他的小括号，如`(Ed.)`；也不必管年份之后是否还包括月份日期的信息。**凡是**第一次出现`左括号 + 4位数年份`的模式即是要提取的年份信息，例如：
+
+- `(2017)`中`(2017`的`2017`
+- `(Ed.). (2012)`中`(2012`的`2012`
+- `(2016-9-14)`中`(2016`的`2016`
+
+确定以上信息后，即可着手提取相关年份信息。
+
+这里使用 **tidyverse** 系列包中的 **stringr** 和 **dplyr** 包实现上述目标。完全理解下列命令需掌握一定的[正则表达式（regular expression）](https://github.com/rstudio/cheatsheets/raw/master/strings.pdf)基础。
+
+示例数据采用上面[**文献1**](http://journal.psych.ac.cn/xlkxjz/CN/volumn/volumn_214.shtml#1)中的参考文献，同时增加了3条报纸文献，以丰富文献格式模式。
+
+```{r, message = FALSE}
+if (!require(tidyverse)) install.packages(tidyverse) # 载入tidyverse包，若无此包则先安装
+reference_list <- read.csv("reference_list.csv") # 读入文件
+reference_list <- mutate(
+  reference_list,
+  year = str_extract(reference_list$title, "(?<=\\()[0-9]{4}") %>%
+  as.numeric()
+  )
+mean(reference_list$year >= 2013, na.rm = TRUE) %>% 
+  round(2) # 计算2013年以来（含）的文献占比，本保留两位小数
+```
+
+重点在于解释`str_extract()`命令中的模式`"(?<=\\()[0-9]{4}"`，其中
+
+- `?<=` 表示向后查找
+- `\\(` 表示小括号，其中`\\`是 R 中的转义符
+- `(?<=\\()` 中最外层的小括号用于匹配字符组合，括号内的字符串作为整体被匹配，本身无实际含义
+- `[0-9]`表示任意数字，`{4}`表示重复4次，以代表4位数年份
+- `"(?<=\\()[0-9]{4}"` 表示匹配`左括号 + 4位数年份`的模式
+
+整体上，整串命令的其他函数功能解释如下
+
+- `str_extract(x, "pattern")` 表示提取字符串向量`x`中第一次出现的指定模式
+- `%>%` 表示管道操作符（pipe opretor），即将上一个函数的结果传递作为下一个函数的操作对象
+- `as.numeric()`用于将提取结果转为数值型向量以便后续计算，否则默认为字符型
+- `mutate(dataframe, var = expression)` 用于在原数据框中新增变量，即这里的`year`。
+- `reference_list$year >= 2013` 返回逻辑向量，满足条件为`TRUE`，反之为`FALSE`
+- `mean(reference_list$year >= 2013)` 表示对逻辑值（实际储存为0-1整形向量，`TRUE`为1，`FALSE`为0）求均值，即比例
+- `mean(x, na.rm = TRUE)` 表示剔除缺失值再求均值，若不符合指定模式，`str_extract()` 会返回`NA`，此部分文献实际上较为罕见，这里将之排除
+
+
+类似地，若输入`mean(reference_list$year >= 2008 & reference_list$year < 2013)` 即求出2008至2012年的文献占比。至此目标达成。
+
+今后应用中，确保参考文献按 APA 格式撰写后，另存为`.csv`文件导入（第一行为列名），输入指定基数年份（如这里的2013，随投稿年份不同而不同），即可完成相应计算。二审、三审修改稿时也往往涉及参考文献的增删，同样可重复执行上述命令，重新计算不同年份区间的占比情况。
