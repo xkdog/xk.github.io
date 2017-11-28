@@ -39,7 +39,7 @@ comments: true
 
 示例数据采用上面[**文献1**](http://journal.psych.ac.cn/xlkxjz/CN/volumn/volumn_214.shtml#1)中的参考文献，同时增加了3条报纸文献，以丰富文献格式模式。
 
-```{r, message = FALSE}
+```
 if (!require(tidyverse)) install.packages(tidyverse) # 载入tidyverse包，若无此包则先安装
 reference_list <- read.csv("reference_list.csv") # 读入文件
 reference_list <- mutate(
